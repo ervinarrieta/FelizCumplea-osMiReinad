@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1c0f1e">
+<title>Feliz cumpleaños mi Reina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500;1,600&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="cursor" id="cursor" aria-hidden="true">♥</div>
+<div class="floaters" id="floaters" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="brand" href="#inicio" aria-label="Inicio">J ♥ E</a>
+  <nav class="menu" id="menu" role="tablist" aria-label="Secciones">
+    <a class="btn-nav active" href="#inicio"   role="tab" aria-selected="true">Inicio</a>
+    <a class="btn-nav"        href="#historia" role="tab" aria-selected="false">Nuestra historia</a>
+    <a class="btn-nav"        href="#viajes"   role="tab" aria-selected="false">Viajes</a>
+    <a class="btn-nav"        href="#momentos" role="tab" aria-selected="false">Momentos</a>
+    <a class="btn-nav"        href="#frases"   role="tab" aria-selected="false">Frases</a>
+    <a class="btn-nav"        href="#carta"    role="tab" aria-selected="false">Mi carta</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ===== PESTAÑA 1: INICIO ===== -->
+  <section class="hero tab-panel active" id="inicio" role="tabpanel" aria-label="Inicio">
+    <div class="hero-text">
+      <p class="intro d1">1 de octubre</p>
+      <h1 class="d2">Feliz cumpleaños,<br><span>Johana</span></h1>
+      <p class="sub d3">Veinte años de ti, y cuatro de ellos a mi lado. Esta página es solo tuya.</p>
+      <div class="countdown d4" id="countdown" aria-live="polite"></div>
+      <a class="big-btn d5" href="#historia">Empezar el recorrido</a>
+    </div>
+    <div class="hero-photo d3">
+      <img src="IMG-20260606-WA0087.jpg" alt="Johana">
+      <span class="badge">20</span>
+    </div>
+  </section>
+
+  <!-- ===== PESTAÑA 2: HISTORIA ===== -->
+  <section class="section tab-panel" id="historia" role="tabpanel" aria-label="Nuestra historia">
+    <h2 class="reveal" style="--d:0s">Nuestra historia</h2>
+    <p class="lead reveal" style="--d:.15s">Desde el 11 de junio de 2022 llevamos la cuenta de lo que somos.</p>
+    <div class="timer-box reveal" style="--d:.3s" id="timer"></div>
+    <div class="timeline">
+      <article class="box reveal" style="--d:.1s">
+        <h3>11 de junio de 2022</h3>
+        <p>El día en que nos hicimos novios. Un sí sencillo que lo cambió todo.</p>
+      </article>
+      <article class="box reveal" style="--d:.3s">
+        <h3>Creciendo juntos</h3>
+        <p>Entre servicio, risas, salidas y sueños, hemos aprendido que el amor también se construye en lo pequeño.</p>
+      </article>
+      <article class="box reveal" style="--d:.5s">
+        <h3>Hoy</h3>
+        <p>Cumples 20 años y yo sigo agradecido de que Dios cruzara nuestros caminos.</p>
+      </article>
+    </div>
+    <figure class="sign reveal" style="--d:.2s">
+      <img src="IMG_2935.jpg" alt="Johana y Ervin con un cartel" data-zoom>
+      <figcaption>“Deja que Dios escriba tu historia”. Y la escribió contigo a mi lado.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ===== PESTAÑA 3: VIAJES ===== -->
+  <section class="section tab-panel" id="viajes" role="tabpanel" aria-label="Viajes">
+    <h2 class="reveal" style="--d:0s">Nuestros viajes</h2>
+    <p class="lead reveal" style="--d:.15s">Cada lugar es mejor cuando vas de mi mano.</p>
+    <div class="grid">
+      <article class="card reveal" style="--d:.1s">
+        <img src="IMG-20250611-WA0061.jpg" alt="Viaje bajo las palmas" data-zoom>
+        <div><h3>Los delfines (primer camporee)</h3><p>Una pareja naciente bendecida por el pastor Cayrus.</p></div>
+      </article>
+      <article class="card reveal" style="--d:.3s">
+        <img src="IMG-20250611-WA0062.jpg" alt="Sentados entre jardines" data-zoom>
+        <div><h3>Un descanso juntos</h3><p>Sentarme a tu lado siempre sera mi plan fv y mucho mas si hay playa de por medio.</p></div>
+      </article>
+      <article class="card reveal" style="--d:.5s">
+        <img src="IMG-20250530-WA0115.jpg" alt="Pose divertida" data-zoom>
+        <div><h3>Chinulito</h3><p>En este viaje me di cuenta que no eramos perfectos, pero el amor se basa en elegir amar a pesar de los defectos.</p></div>
+      </article>
+      <article class="card reveal" style="--d:.7s">
+        <img src="IMG-20250623-WA0026.jpg" alt="Encuentro con amigos" data-zoom>
+        <div><h3>Camporee Nacional</h3><p>Una experiencia inolvidable a tu lado y el sello de la bendicion que nos dio Pr. cayrus.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== PESTAÑA 4: MOMENTOS ===== -->
+  <section class="section tab-panel" id="momentos" role="tabpanel" aria-label="Momentos">
+    <h2 class="reveal" style="--d:0s">Momentos que guardo</h2>
+    <p class="lead reveal" style="--d:.15s">Toca una foto para verla grande.</p>
+    <div class="masonry">
+      <img class="reveal" style="--d:.1s"  src="IMG-20250611-WA0006.jpg" alt="Selfie" data-zoom>
+      <img class="reveal" style="--d:.25s" src="IMG-20260321-WA0028.jpg" alt="Selfie de noche" data-zoom>
+      <img class="reveal" style="--d:.4s"  src="IMG-20260516-WA0057.jpg" alt="Tarde bajo los árboles" data-zoom>
+      <img class="reveal" style="--d:.55s" src="IMG-20260401-WA0151.jpg" alt="Celebración" data-zoom>
+    </div>
+  </section>
+
+  <!-- ===== PESTAÑA 5: FRASES ===== -->
+  <section class="section tab-panel" id="frases" role="tabpanel" aria-label="Frases">
+    <h2 class="reveal" style="--d:0s">Lo que siento</h2>
+    <div class="quote-box reveal" style="--d:.2s">
+      <button class="arrow" id="prev" aria-label="Frase anterior">‹</button>
+      <blockquote id="quote"></blockquote>
+      <button class="arrow" id="next" aria-label="Frase siguiente">›</button>
+    </div>
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <!-- ===== PESTAÑA 6: CARTA ===== -->
+  <section class="section tab-panel" id="carta" role="tabpanel" aria-label="Mi carta">
+    <h2 class="reveal" style="--d:0s">Una carta para ti</h2>
+    <div class="letter reveal" style="--d:.2s">
+      <p id="letter-text" aria-live="polite">Toca el botón para abrirla.</p>
+      <button class="big-btn" id="open-letter">💌 Abrir carta</button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="script">Te amo, Johana.</p>
+  <p>Hecho con todo mi corazón por Ervin Arrieta · Para tus 20 años · 1 de octubre de 2026</p>
+  <button class="big-btn small" id="burst" type="button">Lluvia de corazones 💗</button>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+  <img alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
